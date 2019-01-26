@@ -53,8 +53,27 @@ projects will also produce some interesting images for you to enjoy.
 ### Details
 
 
-Let's take a moment to recreate the Mondrian piece shown above using the pygame package.
-If it is not here yet please remind me to write the code. If it is done it will be 
-called 'example.py'.
+Let's take a moment to start the Mondrian painting shown at the top of this page. Our background might be beige 
+or something (it is at cswonders) so let's begin by drawing a large white rectangle. This will be our painting canvas. 
+
+
+```
+from turtle import Turtle
+
+artist = Turtle()
+artist.hideturtle()
+artist.speed(1000)
+
+def rectangle(t, llh, width, height, color):
+    t.up(); t.pencolor(color); t.fillcolor(color); t.setpos(llh); t.down()
+    t.begin_fill()
+    t.setheading(0); t.forward(width); t.setheading(90); t.forward(height)
+    t.setheading(180); t.forward(width); t.setheading(270); t.forward(height)
+    t.end_fill(); t.up()
+
+rectangle(artist, (-200,-200), 400, 400, 'white')
+
+print('...voila!...')
+```
 
 
