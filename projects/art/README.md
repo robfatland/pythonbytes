@@ -55,6 +55,7 @@ projects will also produce some interesting images for you to enjoy.
 
 Let's take a moment to start the Mondrian painting shown at the top of this page. Our background might be beige 
 or something (it is at cswonders) so let's begin by drawing a large white rectangle. This will be our painting canvas. 
+I also put a red rectangle on top of that...
 
 
 ```
@@ -73,7 +74,21 @@ def rectangle(t, llh, width, height, color):
 
 rectangle(artist, (-200,-200), 400, 400, 'white')
 
+rectangle(artist, (-200, 194), 185, 6, 'red')
+
 print('...voila!...')
 ```
+
+Notice that the code above uses a function called `rectangle()` which is a sequence of turtle graphics methods: up() and 
+begin_fill() and so on. I have separated commands by semi-colons to make it a little easier to read. The idea is for 
+every one of those commands to make sense to you. What is the purpose of `t.up()`? Of `t.begin_fill()` and `t.end_fill()`?
+
+
+Another question: If the turtle is called `artist` then why does the `rectangle()` function use `t.up()` and not
+`artist.up()`? 
+
+
+Working from this starting point (you can do this on cswonders or your favorite Python environment) you should be able to put
+together a pretty good approximation of Piet Mondrian's painting. And we're off and running!
 
 
