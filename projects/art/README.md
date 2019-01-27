@@ -49,8 +49,15 @@ projects will also produce some interesting images for you to enjoy.
 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/julia.png" alt="drawing" width="300"/>
 
+### Spoiler Alert!
 
-### Details
+If you want to continue under your own power: Don't read any further; the next section has *spoilers* on how to
+approach the Piet Mondrian painting (the first one up at the top). What is not a spoiler is to mention to you that
+there is a [reference website for turtle graphics here](https://docs.python.org/3.3/library/turtle.html) that can
+be very helpful!
+
+
+### Details with spoilers
 
 
 Let's take a moment to start the Mondrian painting shown at the top of this page. Our background might be beige 
@@ -66,10 +73,20 @@ artist.hideturtle()
 artist.speed(1000)
 
 def rectangle(t, llh, width, height, color):
-    t.up(); t.pencolor(color); t.fillcolor(color); t.setpos(llh); t.down()
+    t.up(); 
+    t.pencolor(color); 
+    t.fillcolor(color); 
+    t.setpos(llh); 
+    t.down()
     t.begin_fill()
-    t.setheading(0); t.forward(width); t.setheading(90); t.forward(height)
-    t.setheading(180); t.forward(width); t.setheading(270); t.forward(height)
+    t.setheading(0); 
+    t.forward(width); 
+    t.setheading(90); 
+    t.forward(height)
+    t.setheading(180); 
+    t.forward(width); 
+    t.setheading(270); 
+    t.forward(height)
     t.end_fill(); t.up()
 
 rectangle(artist, (-200,-200), 400, 400, 'white')
