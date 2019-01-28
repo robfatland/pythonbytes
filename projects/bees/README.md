@@ -1,6 +1,9 @@
 # PythonBytes Project In-Depth
 
 
+### This project works using Python 3 at http://repl.it
+
+
 ## Bees and Drones
 
 
@@ -9,80 +12,50 @@
 
 ### Overview
 
-Farmers like to see bees (particularly honey bees) in their fields and orchards because the bees help pollinate the plants. 
-In this project we imagine that you are such a farmer and you happen to own ten drones that you can send to locations in 
-your orchard. By measuring the local buzzing your drones are able to tell you how many bees there are at that location. 
-You goal is to determine places where the bees are clustering (these are called hives) so that you can visit those locations
-in early summer and hopefully capture a swarm. 
+Farmers like to see bees (particularly honey bees) in their fields and orchards because the bees help pollinate the plants.
+This results in a bigger harvest. 
 
 
-Now what is a swarm? And why do bees do this behavior? And why would a farmer wish to *capture* it? (It sounds rather
-dangerous!) And once they do is that good or bad for the bees? So who wins and who loses in this situation. We leave it
-to you to do the research. For now we will concentrate on the programming challenge: Use Python to send your drones out 
-into your orchard to observe the bee density. Use your intelligence to program a search pattern... but be warned: 
-The further out you send your drones the more likely it is that they will become entangled in the branches of your
-orchard trees and lost. 
+In this project we imagine that you are a farmer and you happen to own an unlimited supply of drones. These
+you can send to various locations in your orchard where they can count how many bees are nearby. (They listen 
+to the buzzing.)
 
+
+You goal is to find places where there are lots of bees clustered together. This is called a hive. Once you know
+where the hive is you can visit it and cultivate the bees. To learn more about this
+you can read [this article](https://en.wikipedia.org/wiki/Swarming_(honey_bee)).
+
+
+The challenge of this project is to use Python to send your drones out into your orchard to count bees.
+Try to find all of the hives but also keep track of how many drones you lose. The best program will win a
+special Bee Prize at the end of the year. 
 
 
 ### Details
 
 
-Somewhere on the internet is a service that listens for requests ('How many bees are at (x, y, z) coordinates?') When it
-gets such a request it returns the number of bees; but of course the answer will be somewhat at random, bees being what
-they are. This is how we are simulating your drone observing the bees. However if your drone gets tangled in the orchard
-branches the service will return the string 'drone lost'. 
+Somewhere on the internet I have installed a little program that acts like a Python function. You
+send it a drone location and it tells you how many bees the drone counted... or it returns 'drone lost'
+meaning your drone got stuck in a Baobab tree. We will use coordinates `(x, y, z)` where `x` and `y`
+are locations in the orchard between 0 and 2000 meters. `z` will be height above the ground in meters. 
+Baobabs can grow as high as 30 meters. 
 
 
-You want to locate the bee hives so that you can transfer the summer swarms to Dadant hives. 
-The project is to write a program that intelligently locates the hives before you run out of drones.  
-
-
-What is a 'service'? First let's come up with a name for 'what you type in your browser window'. For example if you
-type in 'google.com' your browser gives you a search window from Google. So let's call that thing you type in a URL.
-You can read about what URL stands for on Wikipedia if you like. Suppose you want to go to Google to look up what
-Dadant hives are. You can type in the URL http://google.com and then type in 'Dadant' in the search box. OR you can
-use a different URL that does the search immediately. Try typing this into your browser: 
-
-
-```
-http://google.com/search?query=Dadant
-```
-
-What you did was tell Google some additional things by making the URL longer. Google interpreted what you put in
-to mean 'Dear Google: Please do a search for me using the word *Dadant*'. And that is what Google did for you; and
-that is what we mean by a *service*. 
-
-
-Now here is a way of trying out the service that tells you how many bees are at ```(x, y, z)```. Try copying 
-and pasting this: 
+Now let's ask "how many bees are at (x, y, z)" and see what comes back. Paste this into a
+browser window: 
 
 
 ```
 https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?x=12&y=16&z=4
 ```
 
+Notice that at the very far right it gives what x, y and z are.
+
+
 I just did this and what I got back looked like a blank web page... until I noticed the number **8** in the upper left corner. 
-So apparently there are 8 bees at the coordinates ```(x, y, z) = (12, 16, 4)```. So that's cool. What happens if I hit refresh?
-The answer is that this time I got 5 bees. So it changes. As long as my searches are really close to the corner ```(0, 0, 0)```
-like this it is unlikely I will lose my drone. So you can practice a bit, safely. 
-
-
-Now what happens when I send the drone out into the orchard? Let's make a URL that sends a drone to location ```(1000, 1000, 30)```
-which is just about the center of the orchard? Here is the URL to use for this: 
-
-
-```
-https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?x=1000&y=1000&z=30
-```
-
-What I got back after a few refreshes was **6**, **4**, **5**, and **drone lost**. So my drone got stuck in a tree. 
-That's ok; I have 9 left. 
-
-
-Now this is going to be very tedious; but tedious tasks are what computers are good at. So your job is to build 
-a Python program that talks to the internet; in fact that talks to this service.  Here is what the code looks like.
-(This will not work at cswonders.com in code pad by the way; you will need a different Python environment.)
+So apparently there are 8 bees at the coordinates ```(x, y, z) = (12, 16, 4)```. What happens if I hit refresh?
+This time I got 5 bees. So the response changes, presumably because the bees are flying around looking for flowers. 
+Try changing the values for x, y and z to see what comes up. 
 
 
 ```
@@ -97,13 +70,11 @@ print(bees(10, 17, 4))
 When this runs properly it will either return a number of bees or it will return 'drone lost'. 
 
 
-The challenge of this project is to think about the logic for locating the bee hives. If there was no danger of
-losing drones you could just send the drone out four million times to every possible location in the orchard. 
-However since the drones will eventually all wind up stuck in the baobab trees it behooves you to come up with 
-a more efficient strategy.
+The challenge of this project is to think about the logic for locating the bee hives. Since the lost drones
+cost some money you would like to be efficient in your search. 
 
 
 Notice that you can augment your Python program with an incredibly powerful computer: You can use your own brain
-to make suggestions by means of an input statement. 
+to make suggestions. Good luck!
 
 
