@@ -3,6 +3,9 @@
 ## Four Bugs
 
 
+### Select the Python + Turtle environment at [repl.it](http://repl.it)
+
+
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/bugs#pythonbytes-project-in-depth)
 
 
@@ -12,7 +15,7 @@ Four bugs -- call them A, B, C, and D -- are at the corners of a square table of
 faces the bug at the next corner to their left: A faces B, B faces C, C faces D and D faces A. At a 
 signal all the bugs begin walking: Each towards the bug it is facing. They take identical-length tiny bug steps
 and as you might imagine they constantly adjust the direction of their walk. For example A starts walking towards
-B but as B is walking towards C: A will have to adjust her path to the right to keep sighted on B. 
+B but as B is walking towards C: A will have to adjust her path to the right to keep walking directly towards B. 
 
 
 Eventually all of the bugs meet at the center of the table. When they do: How far has each walked? 
@@ -21,36 +24,31 @@ Eventually all of the bugs meet at the center of the table. When they do: How fa
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/bugs/bugpaths2.png" alt="drawing" width="400"/>
 
 
-Now you are probably wondering what their real names are. I was too until I looked it up. They are named Alpher, 
-Bethe, Gamow and Dyson. You would think that bug C would be called Camow but there is not a letter 'C' in Greek
-so we make due with 'G' and that is why it is Gamow. You can look up Alpher Bethe and Gamow on Wikipedia but it 
-will not mention Dyson. He came along later to explain everything. So technically the bugs should be abbreviated
-A, B, G and D but that would confuse everyone. Come to think of it this paragraph probably didn't help.
+#### An unhelpful and confusing paragraph...
+
+
+Now you are probably wondering what the bugs' real names are. I was too until I looked it up. They are named Alpher, 
+Bethe, Gamow and Dyson. You would think that bug C would be called Camow but nope! It is Gamow. You can look up Alpher 
+Bethe and Gamow on Wikipedia but it will not mention Dyson. He came along later to explain everything. 
 
 
 ### Now what?
 
-Now if you wish to try the project out: You can work on it at cswonders, for example on the Code Pad. Be sure
-to save your work somewhere in case something unfortunate happens. You might copy-paste it to OneNote. If you
-try this project out you may wish to skip down on this page to the section called **Details**. There are some
-very useful tips on how turtle graphics can help you solve this problem. 
-
-
-As always you will want to tell a coach or parent that you are working on this project. Put it on the sign-up 
-sheet and make sure that you ask for help if you happen to get stuck. There are also example programs in this
-folder that you can look at if you like. But spoiler alert: They work!
-
-
+* We suggest you work on this project at [repl.it](http://repl.it) using their **Python + Turtle** environment
+* If you work on this at cswonders on Code Pad: Copy and paste your code into OneNote so you don't lose it
+* For useful tips see **Details** below, particularly on turtle graphics
+* Be sure to sign up for this project with the coaches
+* Be sure to ask for help if you happen to get stuck
+* **SPOILER ALERT** There are example programs in this folder that you can look at...
 
 
 ### Details
 
 
-The technical word for one thing chasing after another is 'pursuit'. It is a good word to know because
-often the paths of pursuit are pretty and/or interesting curves. Pursuit problems in Python can make good 
-use of turtle graphics. Why? Because turtle graphics has built in 
-tools or *methods* that help keep the bugs moving in the right direction. 
-This section explains the key ones. 
+The technical word for one thing chasing after another is 'pursuit'. Often the paths of pursuit are pretty 
+and/or interesting curves. Pursuit problems in Python can make good use of turtle graphics. Why? Because turtle 
+graphics has built in *methods* to keep the bugs moving in the right direction. 
+This section explains the key ones you can use.
 
 
 Suppose we have a turtle called **a** and another called **b**:
@@ -68,88 +66,118 @@ Sometimes I call **a** and **b** turtles... and sometimes I call them bugs.
 Now we can set their pen colors and their positions:
 
 ```
-a.pencolor(255, 0, 0)
-b.pencolor(0, 255, 0)
-a.setpos(150, 150)
-b.setpos(150, -150)
+a.pencolor('red')
+b.pencolor('green')
+a.setpos(200, 200)
+b.setpos(200, -200)
 ```
 
-On cswonders our drawing canvas is 400 x 400 pixels with coordinates going from -200 to 200. Notice that
-the turtles -- where we placed them -- are pretty far out there but they are still visible on the canvas. 
+Our drawing canvas might be 400 x 400 pixels with coordinates going from -200 to 200, both `x` and `y`. 
+Now as our turtles move we can observe their progress.
 
 
-Now on the canvas or table-top there is an angle from turtle **a** to turtle **b**. We can determine this angle
-using the towards method:
+#### Pursuit
+
+
+On the table-top there is an angle from turtle **a** to turtle **b**. We can determine this angle
+using `towards()`...
 
 
 ```
 angle_a_to_b = a.towards(b)
 ```
 
-Notice that angle_a_to_b is a variable and its value will be -90.0 because the angles are measured in degrees. 
+Notice that angle_a_to_b is a variable and its value will be -90.0 at the start: angles are measured in degrees. 
 What would be the angle if we did ```b.towards(a)```? I'll give you a moment to consider and give the answer below.
 The key is that the positive x axis is at angle zero degrees relative to the origin.
 
 
-Now how do we point turtle **a** towards turtle **b** (or bug **a** towards bug **b** if you like)? We use another method called
-```setheading()```. By the way the answer to the above question is -90.0 degrees. 
+Now that we know the angle from a to b: How do we point turtle **a** towards turtle **b**?
+(Or point bug **a** towards bug **b** if you like.) We use `setheading()`. 
+By the way the answer to the above question is +90.0 degrees. 
 
 
 ```
 a.setheading(angle_a_to_b)
 ```
 
-Now that we have done this we know bug **a** is facing towards bug **b**. 
-We can tell bug **a** to take a step forward by one pixel using
-the ```forward()``` method. In so doing the **a** bug will be a little bit closer to the **b** bug.
+Now bug **a** is facing towards bug **b**: We used `angle_a_to_b` to set the direction of **a** to face **b**. 
+We can tell bug **a** to take a tiny step forward using 'forward()`. 
 
 
 ```
-a.forward(1.0)
+tiny_step = 0.05
+a.forward(tiny_step)
 ```
 
-Notice since bug **a** is already pointed in the proper direction the 'forward' command does what we want: Pursuit.
+
+Now **a** has moved a little bit closer to **b**. Pursuit!
 
 
-The trick of the program of course is to have all four bugs executing this code at the same time.
+The trick of the program of course is to have all four bugs taking these little tiny steps at the same time. 
+You do not want one of the bugs taking more steps than the others at this point.
 
 
-How do we know that all of the bugs have come together? Here we can use the turtle graphics method ```distance```.
+#### Arriving at the center of the table
+
+
+How do we know that all of the bugs have come together at the center of the table? 
+We use the turtle graphics method `distance()`...
 
 
 distance_a_to_b = a.distance(b)
 
 
-At the start (up above) after we placed **a** and **b** this distance would be 300.0. This is the length
-of the side or edge of the table **s**. 
+At the start (see above) this distance would be 400.0. This is the length
+of the edge of the table **s**. When the bugs are very close together the
+distance will be close to zero; maybe one and a half tiny bug steps.
+Checking this distance will let you choose when the bugs can stop walking.
 
 
-Now you could put an if-statement testing whether this distance is less than say 2 pixels. If it is then we 
-presume that the bugs are very close together and have reached the end of their journey. Then it remains to 
-report how far each one walked... so don't forget to keep track of that! 
+Then it remains to report how far each one has walked... so do keep track of that! 
 
 
 ### Making the problem more complicated
 
 
-This problem can be extended, for example...
+This problem can be extended in a few different ways...
 
 
-- Suppose two diagonals are drawn on the square table. It is possible that in its path 
-each bug may cross over this diagonal. Perhaps even more than once. We ask: 
-What is the number of times if any that a bug will cross a diagonal?
-- Suppose that there is only one bug with no bugs to pursue. This bug has nothing to do and so walks
-a distance of zero. If there are two bugs separated by a distance *s* and they walk towards one 
-another then each walks a distance *s/2*. What if the table is an equilateral triangle of side *s* 
-and there are three bugs, one at each vertex? How far do they walk?
-- What if the table is a pentagon with five sides of length *s* and there are five bugs? 
-- What if the table is a hexagon? 
-- What if the table is a regular n-gon with *n* sides of length *s*? Then how far do the bugs walk
-before they meet at the center of the table? 
-- What happens if the bugs start out in random locations on some table? Is this interesting or not?
-- Same as the previous but each bug's speed is proportional to its distance from the next bug.
-Now what happens? In this scenario bugs that are very close to their target bug move slowly and bugs 
-that are far from their target bug move faster. 
+#### How many diagonal crossings?
+
+
+This is more of a thinking problem than a Python problem. 
+
+
+* Suppose two diagonals are drawn between opposite corners across the square table
+* Does a bug starting at one corner ever cross the next diagonal on its walk? 
+* Does it cross more than one diagonal?
+* How many diagonals does it cross before it reaches the center?
+
+
+#### Different shapes for the table
+
+
+* Our table was square... what happens if it is a triangle (3 bugs)? A hexagon (6 bugs)? A tightrope? (2 bugs)
+* What is the distance the bugs walk for a regular polygon with **n** sides each of length **s**?
+  * This is a challenging math problem
+
+
+#### Random bugs
+
+* Choose **n** to be your number of bugs in order: **a**, **b**, **c**, **...**, **n**
+  * **n** might be 3 or it might be 50 or whatever...
+* Place the **n** bugs on a large table in order...
+  * Place them in random locations...
+  * Each bug is facing the next bug and the last bug **n** is facing the first **a**
+  * Some bugs will be closer to their pursuer than others
+* Version 1: All bugs go at the same speed. What happens?
+* Version 2: Bug speed is proportional to their distance to the bug they are chasing
+  * The farther away the bug is the faster they walk
+
+What happens? 
+
+Can you invent any other versions of **bugs** that are interesting to think about?
 
 
 
