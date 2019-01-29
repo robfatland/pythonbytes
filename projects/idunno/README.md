@@ -27,14 +27,37 @@ use any programming environment that supports turtle graphics; including [cswond
 
 
 ```
-zero_row = [0]*400
-ocean = [zero_row]*400
+import numpy as np
+np.random.seed(0)  # seed for reproducibility
+
+ocean = np.zeros(shape=(400,400))
+print("ocean ndim: ", ocean.ndim)
+print("ocean shape:", ocean.shape)
+print("ocean size: ", ocean.size)
+print("ocean type: ", ocean.dtype)
 ```
 
-Now let's put the number `7` in one of those cells and make sure it appears when we print. 
+Now we have an ocean, yay! 
+
+
+Next let's print out a little patch of water, 5 x 5, and verify it is zeros: 
+
 
 ```
-ocean[53][291] = 7
-print(ocean[52:55][290:293]
+print(ocean[51:56,287:292])
+print('\nthat was the empty ocean...\n')
 ```
+
+Now put the number 9 in the ocean: 
+
+```
+ocean[53,289] = 9
+```
+
+And print out the same ocean again: Check that the 9 is now there: 
+
+```
+print(ocean[51:56,287:292])
+```
+
 
