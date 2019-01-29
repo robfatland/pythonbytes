@@ -46,10 +46,11 @@ c.down()
 d.down()
 
 # make sure you are going to draw quickly
-a.speed(100)
-b.speed(100)
-c.speed(100)
-d.speed(100)
+a.speed(1000)
+b.speed(1000)
+c.speed(1000)
+d.speed(1000)
+box.speed(1000)
 
 # epsilon is the size of each bug step in pixels
 epsilon = 1.0
@@ -126,7 +127,12 @@ while True:
         print('breaking owing to program taking too long to finish')
         break
 
+a.hideturtle()
+b.hideturtle()
+c.hideturtle()
+d.hideturtle()
+box.hideturtle()
+
 # Now state how many steps we took and how far we went
 print(nCycles, 'bugsteps')
 print('Distance', "%.4f" % (a_cumulative / s), 'in units of s')
-
