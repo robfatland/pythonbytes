@@ -27,8 +27,7 @@ use any programming environment that supports turtle graphics; including [cswond
 
 
 ```
-import numpy as np
-np.random.seed(0)  # seed for reproducibility
+import numpy as np                  # this is a toolbox called num - py
 
 ocean = np.zeros(shape=(400,400))
 print("ocean ndim: ", ocean.ndim)
@@ -60,4 +59,24 @@ And print out the same ocean again: Check that the 9 is now there:
 print(ocean[51:56,287:292])
 ```
 
+### Where is this going?
+
+
+We plan to create an ocean ecosystem. Add a layer of plankton, an array of trash, an array of whales and an array of robots. 
+
+
+The whales will swim about looking for plankton; which they eat.
+
+
+The plankton will soak up sunlight and grow.
+
+
+The trash floats around making life difficult for the whales. 
+
+
+The robots swim around cleaning up trash. 
+
+
+The ocean connects to itself across all edges. As a side question: What would this look like if it was in three dimensions 
+rather than two? 
 
