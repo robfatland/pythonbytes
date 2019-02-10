@@ -1,7 +1,8 @@
 # PythonBytes Project In-Depth
 
 
-### This project works using Python 3 at http://repl.it
+### Please use Python 3 at http://repl.it for this project
+#### Remember you have to create an account; and tell the website you are at Tyee Middle School
 
 
 ## Bees and Drones
@@ -59,11 +60,15 @@ Try changing the values for x, y and z to see what comes up.
 
 
 ```
+# Here is a simple program to test the drones ability to count bees in your orchard
 import requests
-def bees(x, y, z): return requests.get('https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?' + \
-        'x=' + str(x) + '&y=' + str(y) + '&z=' + str(z)).text
-    
-print(bees(10, 17, 4))
+def bees(x, y, z): 
+    return requests.get('https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/' + \
+        'dronebees?' + 'x=' + str(x) + '&y=' + str(y) + '&z=' + str(z)).text
+
+# The function bees() returns a string, not an integer, not a float 
+myResult = bees(10, 17, 4)
+print(myResult)
 ```
 
 
@@ -76,5 +81,8 @@ cost some money you would like to be efficient in your search.
 
 Notice that you can augment your Python program with an incredibly powerful computer: You can use your own brain
 to make suggestions. Good luck!
+
+
+To see a solution to this Project look at the file (in this folder) called `example.py`.
 
 
