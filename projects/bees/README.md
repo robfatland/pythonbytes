@@ -19,12 +19,23 @@ This results in a bigger harvest.
 
 
 
-In this project we imagine that you are a farmer and you happen to own an unlimited supply of drones. These
+In this project we imagine that you are a farmer with a large orchard of Baobab trees.
+Here to remind you is a picture of the Baobab tree...
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png" alt="baobab" width="350"/>
+
+The orchard is 2000 meters by 2000 meters; plus there is height above the ground in meters.
+We can say that the orchard is three-dimensional with coordinates (x, y, z) where x and y
+are somewhere between 0 and 2000 and z is somewhere between 0 and 30. 
+
+Now as a farmer you also happen to own an unlimited supply of drones, the mechanical kind. These drones
 you can send to various locations in your orchard where they can count how many bees are nearby. (They listen 
 to the buzzing.)
 
 
-You goal is to find places where there are lots of bees clustered together. This is called a hive. Once you know
+You goal is to find places where there are lots of bees clustered together. This is called a beehive. 
+Once you know
 where the hive is you can visit it and cultivate the bees. To learn more about this
 you can read [this article](https://en.wikipedia.org/wiki/Swarming_(honey_bee)).
 
