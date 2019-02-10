@@ -15,6 +15,10 @@ Farmers like to see bees (particularly honey bees) in their fields and orchards 
 This results in a bigger harvest. 
 
 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/bees/honeybee.png" alt="honey bee" width="350"/>
+
+
+
 In this project we imagine that you are a farmer and you happen to own an unlimited supply of drones. These
 you can send to various locations in your orchard where they can count how many bees are nearby. (They listen 
 to the buzzing.)
