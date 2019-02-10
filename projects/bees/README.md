@@ -1,13 +1,9 @@
 # PythonBytes Project In-Depth
-
-
+## Bees and Drones
 ### Please use Python 3 at http://repl.it for this project
 #### Remember you have to create an account; and tell the website you are at Tyee Middle School
 ##### For a quick sketch to get started: See the file `example.py`
 ##### For a more complete look at the solution: See `example_complete.py`
-
-
-## Bees and Drones
 
 
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
