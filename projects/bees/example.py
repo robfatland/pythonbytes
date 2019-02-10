@@ -18,6 +18,8 @@ dronecounts = np.zeros((nStops,nStops))
 
 
 # This section of code: Keep as-is
-fig = plt.figure(figsize=(6, 3.2)); ax = fig.add_subplot(111); ax.set_title('My Baobab Orchard')
-plt.imshow(dronecounts); fig.savefig('graph.png')
+fig = plt.figure(figsize=(6, 3.2)); ax = fig.add_subplot(111)
+ax.set_title('My Baobab Orchard'); plt.imshow(dronecounts)
+fig.savefig('graph.png')
+
 
