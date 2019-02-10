@@ -3,6 +3,8 @@
 
 ### Please use Python 3 at http://repl.it for this project
 #### Remember you have to create an account; and tell the website you are at Tyee Middle School
+##### For a quick sketch to get started: See the file `example.py`
+##### For a more complete look at the solution: See `example_complete.py`
 
 
 ## Bees and Drones
@@ -83,6 +85,7 @@ Notice that you can augment your Python program with an incredibly powerful comp
 to make suggestions. Good luck!
 
 
-To see a solution to this Project look at the file (in this folder) called `example.py`.
+To see the start of a solution -- but with the important code left out -- see the file (in this folder) `example.py`.
+To see a solution to this Project look at the file (in this folder) called `example_complete.py`.
 
 
