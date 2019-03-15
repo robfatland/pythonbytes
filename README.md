@@ -1,6 +1,7 @@
 # PythonBytes Programming Course
 
-For 2018 2019, Tyee Middle School
+For the 2018--2019 school year, intended for middle school students
+[.](https://github.com/robfatland/ops)
 
 There are four units
   o Unit 1: Your work environment
