@@ -27,6 +27,12 @@ and here is another but who was the artist?
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/abstract.png" alt="drawing" width="400"/>
 
 
+How about this optical illusion? 
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/opticalillusion.png" alt="o-illusion" width="400"/>
+
+
 Could you write a Python program to produce something like this?
 
 
