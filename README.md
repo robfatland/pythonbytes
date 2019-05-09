@@ -1,7 +1,8 @@
-# PythonBytes Programming Course
+# PythonBytes Club
 
-For the 2018--2019 school year, intended for middle school students
+Started in the 2018--2019 school year; middle school; here are lessons learned
 [.](https://github.com/robfatland/ops)
+
 
 There are four units
   o Unit 1: Your work environment
