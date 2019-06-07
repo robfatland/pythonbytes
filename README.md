@@ -9,46 +9,59 @@ and start working on problems that are non-trivial. This last step was missing f
 proved to be very difficult particularly as the students didn't have persistent exposure
 to where the basics became second nature. 
 
-## Lessons learned from 2018-2019
+## Main ideas
 
-- Having a code of conduct signed by students and parents is ***very powerful*** as it sets expectations
-  - The old version should be updated to match up with the new club plan
-- We used a locally-built learning environment for the first half of the year; but this ran into some problems
-  - There was no way to get technical issues addressed in a timely manner
-  - No support for PyGame (which many kids want to use) 
-  - We found that [repl.it](http://repl.it) took some learning but was technically much more solid
-    - It supports turtle graphics
-    - It supports PyGame
-    - It stores projects and they persist; they do not evaporate
-    - It has many more useful features
-- The tempo (once per week; 90 minutes) was not helpful; there was insufficient timely reinforcement
-  - Novice programmers were not spending time outside of club meetings honing their skills
-  - The learning website was treated like a video game: Solve this puzzle, move on (no retention)
-  - The students were not well-engaged with the coaches, particularly the high school student coaches
-  - As a result the students -- particularly novice students -- became frustrated and did not develop a sense of their own competence
-  - I recommend as strongly as possible beginning with a wholistic approach from day 1
-    - Your task is to translate an idea or task that you understand to a program the computer executes
-    - To do this well you need a vocabulary and syntax for Python
-    - To do this well you need to be able to articulate the task away from the computer
-    - To do this well you need debugging skills
-    - To do this well you need a sense of project scope: How much is there to do? How much have you done so far?
-- The projects web page was visited by students but not taken seriously
-  - This boils down to lack of competence (see above) combined with lack of guidance
-    - Guiding a single student into and through a single project can take an hour
-    - Guiding groups of students through the same project is a way of scaling up -- to a degree
-    - While one teacher guides four students: 56 students are left idle
-- The idle students problem is the number one issue where we need to improve the club
-  - The only way to make progress is to scale
-  - The only way to scale is to appoint enough capable project leaders
-    - These leaders must in turn be capable of directing work in very small increments
-- The high school students were initially excited at the prospect of working with the middle school students
-  - However it soon became apparent that they did not have enough direction to be effective
-  - Addressing this will be an ongoing task; not a "train and release" process
+> Introduce the idea of programming *AWAY* from the computer. Students really need to be able to diagram what they want to accomplish (say on a paper tablet or a white board) using their arms without distraction from the REPL interface and the keyboard. As an example the students will need the concept of a variable as essentially three components: A label, a value and a type. I draw this as a bucket with a label on the outside and the type written below and the value sitting inside the bucket. So the point is to understand the concepts and fit them together into a diagram-plan before trying to write the code. Skipping the diagram phase does not work well for anything even slightly algorithmic. Same thing with concepts: Typing in 'a = 3' is much less useful than drawing a bucket with an 'a' on the outside and a 3 on the inside and 'integer' written below. This also helps in distinguishing '3' as a numerical value and '3' as a string. 
+
+> Provide structure. Don't say "Here are five projects: Choose one of them and get started on it." Rather say "Here is one project, which will be print out several rows of the Pascal Triangle. You must write the code that does this out to thirty rows including dealing with the larger numbers without making the triangle look yucky." And so on... most students in this age category do not do well with open-ended assignments; so stay very structured and specific.  
+
+
+> project ideas still available at http://bit.ly/pythonbytes
+
+
+> Explore lock-step coding, partner coding, etcetera. And revisit the points formalism because the silent auction in the final party
+was hugely successful.
+
+
+## More expansively, the lessons learned from 2018-2019
+
+- The code of conduct signed by students and parents is ***essential*** to set expectations
+  - Update the 2018-19 to match the new club plan
+- We appreciate the locally-built learning environment (first half of the year) but recommend moving to [repl](http://repl.it).
+  - Python 3, PyGame, turtle graphics all supported
+  - Good project storage / management facilities
+  - Active participating community
+- One 90 minute session per week works as *intro exposure* but is insufficient for *I can write Python programs*.
+  - There should be some (if episodic) dedication outside of club time to reinforcing skills
+- Coaches should receive extensive coaching (more than was done in 2018-2019)
+  - Emphasis on finding which students are stuck
+  - Emphasis on 1:1 coding with those students who are stuck
+  - Emphasis on the concept basis: 'What is a variable?' and 'What is flow of execution?' as whiteboard discussions
+  - Emphasis on planning out programs without using the computer (line myopia)
+  - Emphasis on finding victories and positivity
+- Wholistic approach from day 1: 'We are here to write programs'
+  - learn everyone's name and where they are coming from
+  - build in kinesthetics
+  - concept basis (OS, bash, variables, flow of control, language-programming parallels...)
+  - vocabulary
+  - syntax
+  - working away from the keyboard
+  - debugging
+  - scoping and solution building (works-to-works)
+- Projects must not be optional/freeform but structured/directed
+  - Revisit existing material with a transformative eye on this change in approach
+  - For guided coding the "do likewise" rejoinder (in your out-of-club time) should be a softer climb
+- Scale via a sufficient number of capable project leaders
+  - Emphasis working in small increments
+- Unsolved: How to deal with distracted students?
+  - Don't be the students' friend; be someone who has valuable time in mind.
+    - "I need you to get value out of this club: you have to close the video game and return to this lesson..."
 
 ## Other topics
 
 - IDLE
-- Is Minecraft (via Python API) an option? Students like the idea...
+- Minecraft
+- Data science
   - ...but hand-holding and expense might be insurmountable obstacles
 - Is GitHub worth introducing? Probably not
 - Jupyter notebooks via Binder: Probably yes
