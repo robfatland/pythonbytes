@@ -48,6 +48,19 @@ Remember to use IDLE!
 
 ## Part 2: Printing numbers the same size
 
+Copy and run this code. It uses four variables.
+
+`
+a1 = 5385
+a2 = 3
+a3 = 12
+a4 = 946728348
+print(a1)
+print(a2)
+print(a3)
+print(a4)
+`
+
 ## Part 3: Creating the next row from the current row
 
 ## Solution
