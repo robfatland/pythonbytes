@@ -1,3 +1,7 @@
+# Python Pascal Triangle
+
+## Overview
+
 To remind you we want our program to print the Pascal triangle like this:
 
 ```
@@ -10,7 +14,7 @@ To remind you we want our program to print the Pascal triangle like this:
 
 and so on. We have a start! And now to finish our Pascal Triangle project we need three things:
 
-- A way to `print()` lines that do not have a <linefeed> built in
+- A way to `print()` lines that do not have a linefeed built in (that skips to the next line)
   - This is so we can glue together each row of the triangle from its pieces so it looks like this:
 
 ```
@@ -38,15 +42,23 @@ instead of like this
   
 - Lastly suppose we have a row of the triangle as a list. We need a way of building the *next* row.
 
-Use IDLE...
+Remember to use IDLE!
+
+## Part 1: Printing without a line feed
+
+## Part 2: Printing numbers the same size
+
+## Part 3: Creating the next row from the current row
+
+## Solution
 
 ```
-row = [1]
-
-for q in range(1, 11, 1):
+for q in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
     q_indent = q*(-3) + 30
     print(q_indent*' ', end = '')
-    for i in range(q): print('%3d' % row[i] + '   ', end = '')
+    for i in range(q):
+        print('%3d' % row[i], end = '')
+        print('   ', end = '')
     print('\n')
     
     newrow = [1] * (q + 1)
