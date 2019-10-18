@@ -46,22 +46,60 @@ Remember to use IDLE!
 
 ## Part 1: Printing without a line feed
 
+Try running this code:
+
+```
+print("fred")
+print("flintstone")
+print("was here")
+```
+
+That is what we probably expected. But we can change the print to not add the line feed at the end of 
+`fred` so that `flintstone` prints directly after `fred`. Try this: 
+
+```
+print("fred", end="")
+print("flintstone")
+print("...was here")
+```
+
 ## Part 2: Printing numbers the same size
 
-Copy and run this code. It uses four variables.
+Copy and run this code. It uses four variables. Bonus: What is their **type**?
 
 ```
 a1 = 5385
 a2 = 3
 a3 = 12
 a4 = 946728348
-print(a1)
-print(a2)
-print(a3)
-print(a4)
+
+print('\nmessy version:\n')
+
+print(a1, a1)
+print(a2, a1)
+print(a3, a1)
+print(a4, a1)
 ```
 
+Notice that the numbers are all jammed together and it is hard to read. What we need is a format
+that lines everything up. Here is how to do this (add these lines below what you just did):
+
+```
+print('\npretty version:\n')
+
+print('%9d' % a1, '%9d' % a1)
+print('%9d' % a2, '%9d' % a1)
+print('%9d' % a3, '%9d' % a1)
+print('%9d' % a4, '%9d' % a1)
+
+print('\n')
+```
+
+That is a little recipe that makes sure every number is 9 characters wide.
+
+
 ## Part 3: Creating the next row from the current row
+
 
 ## Solution
 
