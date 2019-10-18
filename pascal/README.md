@@ -12,7 +12,7 @@ To remind you we want our program to print the Pascal triangle like this:
  1       4       6       4       1
 ```
 
-and so on. We have a start! And now to finish our project we need three things:
+and so on. We have a start! And now to finish our project we need four things:
 
 - First we need a way to `print()` lines that do not have a linefeed built in (that skips to the next line)
   - This is so we can glue together each row of the triangle from its pieces so it looks like this:
@@ -40,7 +40,9 @@ instead of like this
        5
 ```
   
-- Thirdly and lastly: Suppose we have a row of the triangle as a Python list. We need a way of building the *next* row from that.
+- Thirdly we need a way to count automatically. For this we use a Python function called `range()`.
+
+- Fourth and lastly: Suppose we have a row of the triangle as a Python list. We need a way of building the *next* row from that.
 
 Remember to use IDLE!
 
@@ -63,7 +65,10 @@ print("flintstone")
 print("...was here")
 ```
 
-## Part 2: Printing numbers the same size
+This is almost perfect; there is still one small problem. See if you can fix it. 
+
+
+## Part 2: Printing numbers the same width so they line up
 
 Copy and run this code. It uses four variables. Bonus: What is their **type**?
 
@@ -98,22 +103,76 @@ print('\n')
 That is a little recipe that makes sure every number is 9 characters wide.
 
 
-## Part 3: Creating the next row from the current row
+## Part 3: Counting using `range()`
+
+The `range()` function counts for you. If you use `range(5)` in a Python program it will count
+`0, 1, 2, 3, 4`. So it starts at zero and goes up to just below the number you give. In this case 
+you gave it `5` so it stopped at `4`. Run this code:
+
+```
+my_counter = list(range(7))
+print(my_counter)
+```
+
+You could also experiment with `range(2, 9)` and `range(4, 21, 3)` and even `range(19, -6, -2)`.
+What do these do? 
+
+As a final experiment what does this code do? 
+
+```
+q = 10
+a = list(range(q))
+for b in a:
+    print(' ' * (30 - 2*b), 'cow')
+```
+
+
+
+## Part 4: Creating the next row from the current row
+
+
+Suppose we have row 3 in a list called `row`. 
+
+```
+print(row)
+[1, 2, 1]
+```
+
+This has three elements: 1, 2, and 1. The next row will have four elements. Let's create
+a new row where all the elements are 1. Check and see if this works: 
+
+```
+new_length = 4
+new_row = [1]*new_length
+print(new_row)
+```
+
+Now print out each element of the `new_row` list:
+
+```
+print(new_row[0])
+print(new_row[1])
+print(new_row[2])
+print(new_row[3])
+print(new_row[4])
+```
+
+This code will give you an error. It has a bug that you will need to fix. 
+
+Finally notice that you could write:
+
+```
+new_row[1] = row[0] + row[1]
+print(new_row[1])
+```
+
+Now you have all the pieces you need to finish this project; but there is still some careful thinking and
+programming to do. We will meet online (I hope) on Monday at 6 pm to put everything together.
+
 
 
 ## Solution
 
-```
-for q in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
-    q_indent = q*(-3) + 30
-    print(q_indent*' ', end = '')
-    for i in range(q):
-        print('%3d' % row[i], end = '')
-        print('   ', end = '')
-    print('\n')
-    
-    newrow = [1] * (q + 1)
-    for i in range(1, q, 1):
-        newrow[i] = row[i-1] + row[i]
-    row = newrow[:]
-```
+
+Here is a solution... but it is hidden for now! We will put our final solution here once we have it!
+
