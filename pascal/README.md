@@ -167,7 +167,8 @@ print(new_row[1])
 ```
 
 Now you have all the pieces you need to finish this project; but there is still some careful thinking and
-programming to do. We will meet online (I hope) on Monday at 6 pm to put everything together.
+programming to do. We will meet online (I hope) on Monday at 6 pm to put everything together. If that does not
+work out then we will meet Wednesday at 7 and continue then.
 
 
 
@@ -175,4 +176,22 @@ programming to do. We will meet online (I hope) on Monday at 6 pm to put everyth
 
 
 Here is a solution... but it is hidden for now! We will put our final solution here once we have it!
+
+
+## Bonus challenge
+
+
+If you finish this Pascal project and are interested in a similar challenge: Try building a counting spiral. It simply counts from
+1 to 36 placing the numbers in a square spiral, for example like this: 
+
+```
+  21   22    23    24    25    26
+  20    7     8     9    10    27
+  19    6     1     2    11    28
+  18    5     4     3    12    29
+  17   16    15    14    13    30
+  36   35    34    33    32    31
+```
+
+Of course you want to do this as a code that figures everything out; not as six print statements! 
 
