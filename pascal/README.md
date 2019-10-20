@@ -12,7 +12,8 @@ To remind you we want our program to print the Pascal triangle like this:
  1       4       6       4       1
 ```
 
-and so on. We have a start! And now to finish our project we need four things:
+and so on. We have a start! See the bottom of this page for a reminder on what we did at our first meeting.
+Now to finish our project we need four things:
 
 - First we need a way to `print()` lines that do not have a linefeed built in (that skips to the next line)
   - This is so we can glue together each row of the triangle from its pieces so it looks like this:
@@ -31,7 +32,7 @@ instead of like this
                                  1
 ```
 
-- Second we need a way to print() bigger numbers the same size as small numbers...
+- Second we need a way to `print()` bigger numbers the same size as small numbers...
   - `462` is three characters wide; and `5` is only one character wide
   - We want to add two spaces in front of the `5` so it lines up with `462` like so:
 
@@ -194,4 +195,61 @@ If you finish this Pascal project and are interested in a similar challenge: Try
 ```
 
 Of course you want to do this as a code that figures everything out; not as six print statements! 
+
+## What we began with
+
+* Rob's first rule of computer programming: Put your computer away (get out a piece of paper)
+* Rob's second rule of computer programming: Don't do what you are trying to do; instead do something easier.
+
+
+Our project is to print out a Pascal triangle, like ten rows of it. To make progress we reminded ourselves
+of two programming ideas. First that variables are like little buckets with a label and some contents and 
+a `type` such as *integer* or *string*. The second programming idea is that Python programs break down into
+statements which run in order from the top down. When we include loops this sometimes jumps around.
+
+
+The Pascal triangle starts with a `1` in the middle of the page, at the top. There are invisible zeros on either
+side so that when we add two things together we get all zeros except for `0 + 1 = 1` and `1 + 0 = 1` so that the
+second row has two `1`s in it: `1      1`. From here we find the next row is `1      2      1` and so on; so we
+practiced building a few rows of the triangle. 
+
+
+Then we asked the question "How would you write a computer program to print this triangle?" We were very puzzled 
+as it seemed like a complicated task; so this is when we opened up our computers and began doing simpler things
+to build up pieces needed for the project. 
+
+
+We proceeded to remember our Python syntax starting with this program: 
+
+
+```
+for i in ['pig', 'dog']:
+    print(i)
+```
+
+Before running each bit of code we first predict what it will do. Here we have a list of two strings so we 
+become familiar with how the variable `i` takes on each value in the `list` in turn. 
+
+
+Next we ran variations of this where instead of strings we put numbers (integers) in the list: 
+
+
+```
+for i in [0, 5, 10, 15, 20, 25]:
+    print('m'*i, 'horse')
+```
+
+Finally we reversed the order of the numbers in the list:
+
+
+```
+for i in [25, 20, 15, 10, 5, 0]:
+    print('m'*i, 'horse')
+```
+
+From here we had a little bit of an ***Aha!!*** because we can see the indent getting less and less; just like we 
+would need for the Pascal triangle. That is pretty much all we got going on the first session.
+
+
+
 
