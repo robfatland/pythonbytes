@@ -11,7 +11,18 @@ Let's review what we need to finish the triangle. I will start with definite num
 then I will change this gradually into variables in our code. 
 
 
-Suppose you are printing line `5` of the triangle and so far you have printed:
+Suppose you have printed rows 1 -- 4 like this: 
+
+
+```
+                     1
+                 1       1
+             1       2       1
+         1       3       3       1 
+```
+
+
+Now you are printing row `5` of the triangle and so far you have printed the first three numbers:
 
 `
 ```
@@ -33,17 +44,17 @@ available to us. Let us suppose that there is an outer loop over 10 rows that us
 for i in range(1, 11):
 ```
 
-This will make `i` be equal to `1`, then `2`, then `3`, ... all the way up to `11`. Inside this loop we use
-a second loop that uses `j` like this: 
+This will make `i` be equal to `1`, then `2`, then `3`, ... all the way up to `11`. For the 5th line `i` is `5`.
+Inside the `i` loop we use a second loop called the `j` loop, like this: 
 
 ```
     for j in range(i):
 ```
 
-So when `i` is `5` the function `range(5)` will give us `0, 1, 2, 3, 4`. 
+So when `i` is `5` the function `range(i)` will give us `0, 1, 2, 3, 4` for `j`. 
 
 
-Ok so in our example: `i` is equal to `5` because this is row `5`. `j` has value `3` because the `j`-loop is running
+Ok so `i` is equal to `5` because this is row `5` and `j` has value `3` because the `j`-loop is running
 across `0, 1, 2, 3, 4` and it has already done `0, 1, 2` and now it is `3`. We want to print `4` which is 
 `new_row[3]` which is `new_row[j]`. So the print statement looks like this: 
 
