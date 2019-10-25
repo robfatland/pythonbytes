@@ -74,8 +74,8 @@ Once we finish the entire row we need a line feed:
 
 The way I created the list `new_row` from the list `row` is described here. Also every time we finish printing
 the new row (`new_row`) we want to copy it into `row`. Why? Because the next time we come around on the loop we
-want to generate the ***next*** row using the same code; so `new_row` is copied into `row`. It is like building a volcano:
-The next layer of lava sits on top of all the previous layers of lava. 
+want to generate the ***next*** version of `new_row` from `row`. So we have to update `row` to be ready for that.
+It is like building a volcano: The next layer of lava sits on top of all the previous layers of lava. 
 
 
 We can begin outside of the loops by making `row` be an empty list:
