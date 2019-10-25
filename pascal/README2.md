@@ -60,10 +60,10 @@ across `0, 1, 2, 3, 4` and it has already done `0, 1, 2` and now it is `3`. We w
 
 
 ```
-        print("%3d" % qq, "   ", end="")
+        print("%3d" % new_row[j], "   ", end="")
 ```
 
-Once we finish the entire row we need a line feed to print so we go down to the next row, something like this: 
+Once we finish the entire row we need a line feed:
 
 ```
     print("")
