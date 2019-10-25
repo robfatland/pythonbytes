@@ -126,8 +126,9 @@ Here is some useful code:
 ```
 
 When `i` is `5` we see that `j` will take on values `1, 2, 3`. That is good, just what we want. 
-When `j` is `1` the `new_row` will be `row[0] + row[1]`. Since `row` is `[1, 3, 3, 1]` this gives
-us `1 + 3` which is `4`. You can check the others as well. 
+When `j` is `1` the `new_row` value `new_row[1]` will be calculated as `row[0] + row[1]`. 
+Since `row` is `[1, 3, 3, 1]` this gives us `1 + 3` which is `4`. You can check that the other 
+`new_row[j]` calculations in the `j` loop also work.  
 
 
 #### Copying `new_row` into `row`
@@ -139,7 +140,7 @@ The simplest way to make `row` equal to `new_row` at the end of the loop is like
     row = new_row[:]
 ```
 
-The `:` inside the square bracket means `go through the entire list to make a copy of it`. 
+The `:` inside the square bracket means `go through the entire list and make a copy of it`. 
 
 
 ## Extra challenge
@@ -149,9 +150,36 @@ At the start of each row, over on the very left-hand side: Print out the sum tot
 in that row. For the first row `[1]` this sum is `1`. For the second row `[1   1]` the sum is `2`. See 
 if there is a pattern.
 
+Here is some code that shows how you can use the `sum()` function to add up all the numbers in a list: 
+
+
+```
+a = [4, 5, 10]
+my_sum = sum(a)
+print(my_sum)
+```
+
+Would this code also work? 
+
+
+```
+a = [4, 5, 10]
+print(sum(a))
+```
+
+
+What happens if you run this code: 
+
+
+```
+a = [4, 5, 'pig']
+print(sum(a))
+```
+
 
 ## Next problem
 
+Our next problem to solve is... send me suggestions on slack!
 
 
 
