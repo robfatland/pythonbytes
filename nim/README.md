@@ -17,11 +17,11 @@ in turns. Here is what happens.
 
 
 * The players choose the number of stones in the pile 
-  * In our example we choose 11
+  * From 8 to maybe 20 stones is a good range
 * The players decide who is to go first (Player 1)
 * Player 1 removes 1, 2 or 3 stones from the pile 
 * Player 2 removes 1, 2 or 3 stones from the pile
-* Players continue taking turns until one player takes the last stone
+* Players continue taking turns in this way until one player takes the last stone
   * That player who takes the last stone loses
   
 
