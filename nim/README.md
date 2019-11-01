@@ -51,9 +51,9 @@ we have Player 1 = the program and Player 2 = a human.
 * Allow the human to take 1 or 2 or 3 stones
   * If they try to take a bad number of stones, like 5 or -3 stones: Don't allow this
 * Once the player has chosen how many stones to remove: Print out the remaining pile 
-  * For example like this for 13 stones: `o o o o o o o o o o o o o`
+  * For example: `13 stones remain     o o o o o o o o o o o o o`
 * Now the program has to choose 1, 2, or 3 stones; so print this choice
-  * Also reprint the pile of remaining stones
+  * Again print the pile of remaining stones
 * Keep repeating this until someone (the human or the program) takes the last stone
 * Print out who won the game
 
@@ -64,18 +64,70 @@ stones_string = input("How many stones should we begin with?")
 Now before we can begin we need to convert this *string* to a new variable of type *int*.
 
 
-### Stopping the program
+### Two useful ingredients
+
+
+Here are two things that could be used in a Nim program: while and exit(). 
+
+
+`while` is a Python key word that creates a simple loop. Suppose we have this code: 
+
+
+```
+a = 3
+while a > 2:
+    print ('a is still greater than 2')
+```
+
+This code will run forever! If you try it you might have to stop it using Ctrl-C. Let's do a nicer version: 
+
+
+```
+a = 3
+while a < 10:
+    print('a = ', a)
+    a = a + 1
+
+print('a is no longer less than 10. In fact a = ', a)
+```
+
+That takes care of `while` for a start. How about `exit(0)`? That stops the program
+Suppose the player tries to remove a bad number of stones -- like 10 -- and you decide the program should
+just stop in response. You can use `exit(0)` to do this: 
 
 ```
 import os
 
 os.exit(0)
+
+print("never printed this bit i bet")
+```
+
+
+Now let's combine these two ingredients into one. Predict what this program will do before you run it. 
+
+
+```
+import os
+
+a = 7
+while a < 20: 
+    print('a = ', a)
+    a = a + 1
+    if a > 15:
+        print('time to quit!')
+        exit(0)
+        print('but this will not print because it comes after the exit()')
+
+print('this will not print either')
 ```
 
 ### Choosing a random number from 1 to 3
 
+`randint()` is a Python function that produces a random integer. 
 Run this program to see how `randint()` works. The first lime `from random import randint` is a bit 
-of magic that we will explain later.
+of magic that we will explain later. There was similar magic up above when we had `import os`. But
+we won't worry about this at the moment. 
 
 ```
 from random import randint
