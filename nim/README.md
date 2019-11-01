@@ -1,3 +1,6 @@
+<img src="https://github.com/robfatland/pythonbytes/blob/master/nim/nim_pile.png" alt="drawing" width="700"/>
+
+
 # Nim Misere
 
 
