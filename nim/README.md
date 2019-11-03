@@ -68,10 +68,12 @@ Now before we can begin we need to convert this *string* to a new variable of ty
 ### Two useful ingredients
 
 
-Here are two things that could be used in a Nim program: while and exit(). 
+Here are two things that could be used in a Nim program: `while` and `exit()`. 
 
 
-`while` is a Python key word that creates a simple loop. Suppose we have this code: 
+`while` is a Python key word that creates a simple loop. 
+It is like a simpler version of a `for` loop. 
+Suppose we have this code: 
 
 
 ```
@@ -80,7 +82,14 @@ while a > 2:
     print ('a is still greater than 2')
 ```
 
-This code will run forever! If you try it you might have to stop it using Ctrl-C. Let's do a nicer version: 
+The indented code (inside the loop) will run over and over again as long as `a` is greater than `2`. 
+Notice that the value of `a` never changes. This means that `a` will *always* be greater than `2`.
+This code will therefore run forever! 
+By forever I mean it will run until you stop the program yourself or until the computer falls apart.
+If you try running this code you might eventually decide to stop it using ctrl-C. 
+
+
+Let's do a nicer (non-infinite) version of a `while` loop: 
 
 
 ```
