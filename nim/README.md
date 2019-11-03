@@ -32,7 +32,7 @@ Before trying to write some Python: Use a pencil and paper to play a few games o
 You can play just by yourself or you can play with a friend. After you play some games
 of Nim what conclusions do you reach? 
 
-> By the way: Losing by taking the last stone is called Nim Misere. You can also play
+> By the way: Losing by taking the last stone is called *Nim misere*. You can also play
 the game where the player who takes the last stone is the winner. No problems either
 way but of course the strategy might change.
 
@@ -158,7 +158,7 @@ the version that plays legally but not very skillfully.
 
 
 `randint()` is a Python function that produces a random integer. 
-Run this program to see how `randint()` works. The first lime `from random import randint` is a bit 
+Run this program to see how `randint()` works. The first line `from random import randint` is a bit 
 of magic that we will explain later. There was similar magic up above when we had `import os`. But
 we won't worry about this at the moment. 
 
