@@ -58,14 +58,23 @@ we have Player 1 = the program and Player 2 = a human.
 * Keep repeating this until someone (the human or the program) takes the last stone
 * Print out who won the game
 
-### Input
+### A useful ingredient: `input()`
 
+As you may know we use `input()` to get information from the human. This provides us
+with a variable of type `string`. If we wish to do math (like counting) with this
+value we must first convert it to an *integer*. In Python we say an integer variable
+is of type `int`. You can say `a_integer = int(a_string)` for example to do this 
+conversion. Now you can use the `a_integer` variable as a number.
+
+```
 stones_string = input("How many stones should we begin with?")
+```
 
-Now before we can begin we need to convert this *string* to a new variable of type *int*.
+Again: Before we go further with the program we should convert this *string* to a new 
+variable of type *int*.
 
 
-### Two useful ingredients
+### Two more useful ingredients: `while` and `exit()`
 
 
 Here are two things that could be used in a Nim program: `while` and `exit()`. 
@@ -101,20 +110,29 @@ while a < 10:
 print('a is no longer less than 10. In fact a = ', a)
 ```
 
-That takes care of `while` for a start. How about `exit(0)`? That stops the program
-Suppose the player tries to remove a bad number of stones -- like 10 -- and you decide the program should
-just stop in response. You can use `exit(0)` to do this: 
+That takes care of `while` for a start. How about `exit(0)`? That is a function (not a key word) 
+that stops the program from running any further. We tend to put them inside an `if` statement
+so it amounts to `if something is going wrong just stop the program!`.
+
+
+Suppose the player tries to remove an illegal number of stones -- like 10 -- and you think the program should
+just stop. Here is a test program to see how this works. 
+
 
 ```
 import os
 
-os.exit(0)
+player_stones = 10
+
+if player_stones > 3:
+    os.exit(0)
 
 print("never printed this bit i bet")
 ```
 
 
-Now let's combine these two ingredients into one. Predict what this program will do before you run it. 
+Now let's combine these two ingredients `while` and `exit()` into one section of code. 
+Predict what this program will do before you run it. 
 
 
 ```
@@ -134,6 +152,11 @@ print('this will not print either')
 
 ### Choosing a random number from 1 to 3
 
+
+Here is the final ingredient needed for the first version of our Nim program. Remember this is 
+the version that plays legally but not very skillfully. 
+
+
 `randint()` is a Python function that produces a random integer. 
 Run this program to see how `randint()` works. The first lime `from random import randint` is a bit 
 of magic that we will explain later. There was similar magic up above when we had `import os`. But
@@ -146,4 +169,6 @@ for i in range(20):
     my_random_number = randint(4, 8)
     print(my_random_number)
 ```
+
+How does `randint()` allow us to complete version one of our Nim program? 
 
