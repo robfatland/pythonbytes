@@ -53,7 +53,8 @@ we have Player 1 = the program and Player 2 = a human.
 * Once the player has chosen how many stones to remove: Print out the remaining pile 
   * For example: `13 stones remain     o o o o o o o o o o o o o`
 * Now the program has to choose 1, 2, or 3 stones; so print this choice
-  * Again print the pile of remaining stones
+  * `I choose to take 2 stones. 11 stones remain.`
+  * Again print the pile of remaining stones `o o o o o o o o o o o`
 * Keep repeating this until someone (the human or the program) takes the last stone
 * Print out who won the game
 
