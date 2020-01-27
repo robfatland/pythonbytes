@@ -45,20 +45,37 @@ be called by different parts of a program but in our case we just need to call t
 We will come back to this later in more detail. Briefly: 
 
 
-`(1)` The first line of code gives the function a name
+```
+(1)  def DrawDots(c, time):
+```
+The first line of code gives the function a name
 and declares two variables `c` and `time` that come into play when the body of the function runs. 
 
+```
+(2)      joe.goto(-200, 200 - 4 * time)
+```
+This line of code moves the turtle to the beginning of a row. Which row? The row determined by what `time` it is.
 
-`(2)` This line of code moves the turtle to the beginning of a row. Which row? The row determined by what `time` it is.
-
-`(3)` This line of code creates a loop across the row. It is important to realize that `c` will be a `list` and that
+```
+(3)      for i in range(len(c)):
+```
+This line of code creates a loop across the row. It is important to realize that `c` will be a `list` and that
 `len(c)` is the *length* of that list. For this reason `range(len(c))` gives a for-loop that will scan that list `c`.
 
-`(4)` This is an `if` statement that checks whether this element of the list `c` is `True`. 
+```
+(4)          if c[i]: 
+```
+This is an `if` statement that checks whether this element of the list `c` is `True`. 
 
-`(5)` If it *is* `True` then the turtle will draw a dot for that living space.
+```
+(5)              joe.dot(2)
+```
+If it *is* `True` then the turtle will draw a dot for that living space.
 
-`(6)` Whether or not the turtle draws a dot: It must now move forward 4 pixels to the next location in this row. 
+```
+(6)          joe.forward(4)
+```
+Whether or not the turtle draws a dot: It must now move forward 4 pixels to the next location in this row. 
 
 
 We need to test this function to make sure it works. Now that you have a sense I hope of what the function does: 
