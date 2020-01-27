@@ -83,7 +83,7 @@ print(livingspace)
 Now we can create a time loop. Type this in at the bottom of your program and check that it runs properly:
 
 ```
-for mytime in range(3):
+for mytime in range(7):
     print('mytime is', mytime)
     DrawDots(livingspace, mytime)
     oldlivingspace = livingspace[:]
@@ -100,7 +100,9 @@ for `livingspace` to not be the same every time we need to change it. It will ch
 are unable to change it in place. Instead we calculate the new version of `livingspace` from its copy, `oldlivingspace`. 
 
 
-Once you have the above code working add these lines of code to see how we can change `livingspace`. 
+Once you have the above code working add these lines of code to see how we can change `livingspace`. *Be careful!* This 
+code is indented one tab so that it is *inside* the `mytime` loop. The word `for` should line up with `oldlivingspace` 
+in the previous line of code. 
 
 ```
     for i in range(len(oldlivingspace)):
@@ -110,6 +112,7 @@ Once you have the above code working add these lines of code to see how we can c
             livingspace[i] = False
 ```
 
-Now before running this take a good look at it and predict what you will see. 
+Now before running this program: Take a good look at it and predict what you will see. 
 
-If you take a moment to 
+
+If it works you should see the rows changing each time. That's the end of Part 3; you are over half-way done! 
