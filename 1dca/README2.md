@@ -22,21 +22,28 @@ arguments, `c` and `time`. The *body* of the function is the five lines of code 
 `def` line. 
 
 
-The function is called by *name* by other code. When it is called: The code in the *body* of the function
-runs. In our case this function will do what the name says: It will draw some dots. So what are the 
-*arguments* `c` and `time`? We get to decide that later. (This is a bit like taking apart a car to figure
-out how it works.) 
+The *name* of the function acts like a command. Who gives this command? *You* do by writing that *name* 
+into other parts of your program. 
 
 
-To summarize: The `DrawDots` function will be used later in the program as a little unit of code that 
+Another way to say this: 
+The function is called by *name* by other lines of code, lower down in the program. 
+When the function is called: The code in the *body* of the function
+runs. It does stuff. In our case this function will do what the name says: It will draw some dots. 
+So what are the *arguments* `c` and `time`? We get to decide that later. (This is a bit like taking 
+apart a car to figure out how it works.) 
+
+
+To summarize: The `DrawDots()` function will be used later in the program as a little unit of code that 
 does a particular task. Functions are commonly used to bundle up code in a sensible way. They can often
-but called by different parts of a program but in our case we just need to call this function once. 
+be called by different parts of a program but in our case we just need to call this function once. 
 
 
 ### What do the lines of code in the function do?
 
 
 We will come back to this later in more detail. Briefly: 
+
 
 `(1)` The first line of code gives the function a name
 and declares two variables `c` and `time` that come into play when the body of the function runs. 
