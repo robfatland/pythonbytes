@@ -84,8 +84,8 @@ Hit Enter a couple of times in your code editor below the function and enter thi
 
 ```
 livingspace = [True, False, True, True, False, False, True, False, False, False, True, True]
-myTime = 0
-DrawDots(livingspace, myTime)
+mytime = 0
+DrawDots(livingspace, mytime)
 ```
 
 When you run this code you should see some dots that correspond to the True / False sequence you put in `livingspace`.
@@ -131,14 +131,14 @@ solution by scrolling down but I suggest you try it on your own first!
 # second test
 livingspace[1] = True
 livingspace[2] = False
-myTime = 1
-DrawDots(livingspace, myTime)
+mytime = 1
+DrawDots(livingspace, mytime)
 
 # third test
 livingspace[2] = True
 livingspace[10] = False
-myTime = 2
-DrawDots(livingspace, myTime)
+mytime = 2
+DrawDots(livingspace, mytime)
 ```
 
 Make sure your code does what you expect and everything runs smoothly.
