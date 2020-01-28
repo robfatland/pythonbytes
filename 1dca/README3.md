@@ -72,9 +72,20 @@ fredscatsfriendwhoisagoat = False
 ```
 
 This is a perfectly fine variable name but it is not very helpful in this program. Notice it is a *boolean* with 
-value `False`. 
+value `False`. You can use these in `if` statements. For example (using the above variable):
 
-Ok so try running this line of code to make sure `livingspace` is what you think it is, a list of booleans: 
+
+```
+if fredscatsfriendwhoisagoat:
+    print('How about that cat!')
+else:
+    print('Today is Friday')
+```
+
+What will be printed when this code runs?
+
+
+Ok onward: Try running this next line of code to make sure `livingspace` is what you think it is, a list of booleans: 
 
 ```
 print(livingspace)
