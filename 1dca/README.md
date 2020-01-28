@@ -1,5 +1,11 @@
 ## 1dca Part 1
 
+Create a **repl** at [**repl.it**](https://repl.it) using the **Python (with Turtle graphics)** kernel. Name it 
+1dca and type this in as your first line of code: 
+
+```
+from turtle import Turtle
+```
 
 Our goal in this program is to draw (with the turtle) an interesting pattern, following a very famous recipe from
 the world of computer science. The recipe is a collection of ideas that we will turn into Python code. We will use
