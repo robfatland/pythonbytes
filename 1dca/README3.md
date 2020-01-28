@@ -1,7 +1,7 @@
 ## Part 3
 
 
-### The Python *interpreter* and how it runs the `DrawDots()` function
+### The Python *kernel* and how it runs the `DrawDots()` function
 
 
 So far we have something that looks like this:
