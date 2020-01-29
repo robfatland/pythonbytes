@@ -2,7 +2,7 @@
 
 ### Before we get started
 
-The code for this program may seem mysterious or a bit complicated. This is why I broke it down into five 
+The code for this program may seem mysterious or a bit complicated. This is why I broke the project down into five 
 parts, to try and make it a more gradual hill to climb. My goal is to show you what is possible with just
 a few lines of code without staying in the area of super-basic. There are two good results of this approach; 
 at least I hope. First this code is from real computer science. It is an open door into a world of ideas 
@@ -27,25 +27,30 @@ Remember that our rule was written as a list of boolean values `True` and `False
     rule = [False, True, False, True, True, False, True, False]
 ````
 
-This means that if we say `print(rule[3]))` we should see **True**. So here is the key idea: 
+These have eight indices: 0, 1, 2, 3, 4, 5, 6 and 7. So `rule[7]` has value `True`.
+If we say `print(rule[2]))` we should see **True**. So now here is the key idea: 
 
 ***Each of the eight values of the `rule` list is a possible new value for a cell in `livingspace`.***
 
-Ok what does this mean? Why *eight* values and not nine? Let's think about cell number 7 like we
+
+Ok what does this mean? Why *eight* values and not nine? What does *possible* mean? 
+
+
+Let's work from an example. We will think about cell number 7 as we
 did before. Cell number 7 is going to have a new value at the next time tick: Based on what is found
-in cell 6, cell 7 and cell 8. That is: In cell 7 and in its two neighbors. Let's describe every 
+in cell 6, in cell 7 and in cell 8. That is: In cell 7 and in its two neighbors. Let's describe every 
 possibility for these cells. I will use `o` for a cell that is occupied and `-` for a cell that is 
 empty. 
 
 ```
 location  6   7   8
           -   -   -        all three cells are empty
-          o   -   -        cell 6 is occupied, 7 and 8 are empty
+          -   -   o        cell 8 is occupied, 6 and 7 are empty
           -   o   -        only cell 7 is occupied
-          o   o   -        ...and...
-          -   -   o        ...so...
+          -   o   o        ...and...
+          o   -   -        ...so...
           o   -   o        ...on...
-          -   o   o        ...until we reach...
+          o   o   -        ...until we reach...
           o   o   o        all three cells are occupied
 ```
 
@@ -72,16 +77,20 @@ how this works.
 
 Suppose that cell 6 in `livingspace` is `True`. That is `livingspace[6] = True`. Suppose cell
 7 is `False` and cell 8 is `True`. What should cell 7 be at the next time tick? We will make
-cells 6, 7 and 8 be binary digits in the 1s, 2s and 4s places. So `True False True` becomes
+cells 6, 7 and 8 be binary digits in the 4s, 2s and 1s places. So `True False True` becomes
 `1 0 1` in binary which is `4 + 1 = 5` in decimal. `rule[5]` is `False` so on the next time
 tick cell 7 will be `False` or *empty*. 
 
 
 Another example: Suppose cell 6 is `True` as before, cell 7 is `True` and cell 8 is `False`. Now
-our binary digits are `0 1 1`. Notice the order of the digits is reversed: cell 6 is the 1s digit, 
-cell 7 is the 2s digit, cell 8 is the 4s digit. So now our binary number 011 becomes `3` in decimal.
-Looking it up we see that `rule[3] = True` so in this case cell 7 will be occupied (`True`) on 
+our binary digits are `1 1 0`. Cell 6 is the 4s digit, 
+cell 7 is the 2s digit, cell 8 is the 1s digit. Our binary number 110 becomes `6` in decimal.
+Looking it up we see that `rule[6] = True` so in this case cell 7 will be occupied (`True`) on 
 the next time tick. 
+
+
+Notice we do not want to confuse the `livingspace` cells with the `rule` values. Both of them 
+are lists but they play two different roles in our story here.
 
 
 Hopefully it is clear now how all possible sequences of three cells connect to the `rule` list. 
