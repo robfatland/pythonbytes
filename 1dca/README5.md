@@ -117,7 +117,7 @@ So very good for cell 7; which refers also to cells 6 and 8. What about cell 8? 
 8 we need to check cells 7, 8 and 9. For cell 9 we use cells 8, 9 and 10. So this is why we 
 have a for-loop that goes across all the cells in `livingspace`. And notice that it does the 
 calculation not using `livingspace` but rather it uses `oldlivingspace`. This is why we made
-the copy of `livingspace': If we calculated from `livingspace` and wrote the answer *back into* 
+the copy of `livingspace`: If we calculated from `livingspace` and wrote the answer *back into* 
 `livingspace` then we would mess up the calculation. It would be like adding two large numbers and
 changing the digits of one of them before you were finished: You would get the wrong answer. 
 To avoid that we work from the copy, called `oldlivingspace`. 
