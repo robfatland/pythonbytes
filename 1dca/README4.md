@@ -110,7 +110,7 @@ Here is the code that goes below this. I am putting the second and third bits of
         i1 = i - 1
         i2 = i
         i3 = (i + 1) % nSpaces
-        ruleIndex = 1*oldlivingspace[i1] + 2*oldlivingspace[i2] + 4*oldlivingspace[i3]
+        ruleIndex = 4*oldlivingspace[i1] + 2*oldlivingspace[i2] + 1*oldlivingspace[i3]
         livingspace[i] = rule[ruleIndex]
 ```
 
@@ -125,7 +125,7 @@ Now the challenge -- for Part 5 -- is to understand what this code is doing. The
 understanding it is to change the rule and predict what the new rule will do. Notice that 
 the rule is set up as a list with `rule = [False, True, False, True, True, False, True, False]`. 
 At first look this might be rather mysterious. The other thing that is mysterious (at least
-to me) is the `1` and the `2` and the `4` in the `ruleIndex = ` line. Why are those there? 
+to me) is the `4` and the `2` and the `1` in the `ruleIndex = ` line. Why are those there? 
 
 
 Tune in to **Part 5** to find out. Before you do you might take a moment to think about this, 
