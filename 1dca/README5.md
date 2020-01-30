@@ -105,7 +105,17 @@ the next time tick.
 
 We do not want to confuse the `livingspace` cells (which are `True` or `False`) 
 with `rule` list values (which are *also* `True` or `False`). Both of them 
-are lists but they play two different roles in our story here.
+are lists but they play two different roles in our story here. Here is how they relate:
+
+* At each time tick we loop over all the cells
+* For each cell we look at its value and the value of its neighbors
+* This gives us a number between 0 and 7 inclusive, like say '4'
+* We use that '4' as an index to pick one element of the `rule` list
+  * `rule[4]` which happens to be `True`
+* This value `True` is copied from `rule` into `livingspace`
+
+
+So the `rule` list is a *source* of `True` and `False` values that are copied into `livingspace`.
 
 
 Hopefully it is clear now how all possible sequences of three cells connect to the `rule` list. 
@@ -140,10 +150,23 @@ Now are we done? Not quite. There are a couple of things to tidy up.
 ### Indexing `livingspace`
 
 
-For `i = 0` at the first cell (cell 0) of `livingspace` we have an index `i - 1`. In Python
-you can use an index of -1 to mean *the very last element of the list*. In other words Python
-has a built-in wrap-around for lists. That is why it is ok to use `livingspace[-1]`. This
-is interpreted as `livingspace[nSpaces - 1]` which is just the last element of the list. 
+For `i = 0` at the first cell (cell 0) of `livingspace` we have an index `i - 1` for
+its neighbor to the left, which is `-1`. But allowed indices (we thought) run from
+0, 1, 2, ..., nSpaces - 1. Notice `-1` is not an option as far as we know. Furthermore
+that neighbor to the left is actually the one at the very far right end with index
+`nSpaces - 1` (because `livingspace` wraps around like a bracelet or a ring). 
+
+
+Ok so what do we do about this? The good news is: We don't need to do anything special
+because Python already takes care of this.
+
+
+In Python you can use an index of -1 to mean *the very last element of the list*. 
+In other words Python has a built-in wrap-around for lists. That is why it is ok to use 
+`livingspace[-1]` or `oldlivingspace[-1]`. This
+is interpreted as `livingspace[nSpaces - 1]` which is just the last element of the list.
+It is just what we want. This leaves us just one more problem which is what happens 
+with the neighbor to the *right* at the very far right side of the `livingspace` list.
 
 
 For the cell to the *right* of cell `i` we have the index `i + 1` we can run into trouble 
