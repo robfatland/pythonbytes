@@ -9,6 +9,9 @@ We take as our start a program called `ball`. It seems that infinite loops are p
 to "keep the action going" and this program is no exception. It contains a `while` loop that is interrupted
 only when a person presses a key on the keyboard.
 
+In order for this program to work you will need a file called `ball.png` in the same location as your code. It
+should be a small image of a ball, assumed here to be a soccer ball of some sort.
+
 
 ## `ball` code
 
