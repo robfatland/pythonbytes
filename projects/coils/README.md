@@ -39,7 +39,12 @@ print(randint(1,6)+randint(1,6))
     * Write a program to roll *n* dice 10,000 times in a row
         * Store the results in a list. 
         * Plot the results using a turtle. 
-        * Compare what you see for $n \; = \; 1, 2, 3, 4, \; and \; 5$. 
+        * Compare what you see for `n = 1, 2, 3, 4, 5`.
+        
+
+### Rob left off here
+
+
 * You have a set of n objects, all different, placed in a row before you. You decide to count how many subsets of this set there are by placing either a black or a white pawn next to each object. A black pawn means the object is in the subset and a white pawn means that the object is not in the subset. Now two questions:
   * Does this suggest an easy way of calculating the total number of subsets?
   * What if anything does this have to do with previous challenges? 
@@ -58,7 +63,7 @@ print(randint(1,6)+randint(1,6))
     * [Old Gold](https://nrich.maths.org/1209): Click on the link to learn how to play this game
 
 
-### Turtle Graphics
+### More Graphics Coils
 
 
 Know turtle graphics? These are for you!
