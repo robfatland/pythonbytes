@@ -10,18 +10,14 @@
 ### What are Coils? Something Pythons make quite easily... that often include loops
 
 
-If you 
-are looking for project work that helps you to reinforce your learning of the basics building blocks of Python this
-is the place for you. Coils are 'simple challenges' here although some of them are perhaps not totally simple. 
-We have two sources or supplies of coil projects. First there are the
-**Projects** listed at cswonders.com. Second there are the **coils** from the PythonBytes worksheets 1 -- 6. 
-We want you to think of coils as Python programs that you write from scratch, from a blank editor page, 
-that run and do something interesting.
+Looking for project work to reinforce your basics?  This is the place for you. 
+
+**Coil** challenges range from *pretty simple* to *a bit complicated*. 
 
 
-### Starter Challenges
+### Starters
 
-* Write a program that prints *Lonna’s dog said “whuff!!”*
+* Write a program that prints `*Lonna’s dog said “whuff!!”*`
 * Write a program to print out the first 10 fibonacci numbers
 * Determine what this program does by running it many times
 
