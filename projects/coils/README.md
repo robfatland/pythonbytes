@@ -17,19 +17,29 @@ Looking for project work to reinforce your basics?  This is the place for you.
 
 ### Starters
 
-* Write a program that prints `*Lonna’s dog said “whuff!!”*`
-* Write a program to print out the first 10 fibonacci numbers
-* Determine what this program does by running it many times
+* Write a program that prints *`Lonna’s dog said “whuff!!”`*
+* Write a program to print out the first 20 fibonacci numbers: `0, 1, 1, 2, 3, 5, 8, ...` and so on.
+* Determine what the two-line program below does:
 
 ```
 from random import randint
 print(randint(1,6)+randint(1,6))
 ```
 
-* Write a program: Input a number n, then calculate and print n fibonacci numbers
-* Write code to print ten rows of the Pascal triangle in a pretty and readable fashion
-  * At the end of each row print a colon followed by the sum of all the numbers in that row
-* If you roll 3 dice and add the results the lowest possible sum is 3 and the highest is 18. If you roll n dice the lowest is n and the highest is 6n. Write a program that rolls *n* dice 10,000 times and keeps track of the results in a list. Plot the results using a turtle. You can set the value of *n* at the top of the program or you can have this be an input. Compare your results for n = 1, 2, 3, 4, and 5. (Getting the turtle to draw your results is a very challenging and worthy project in itself!)
+### Trickier
+
+* Input a number and then print that many fibonacci numbers
+* Print ten rows of the Pascal triangle nicely
+    * Also add up the numbers in each row to see if they form a pattern
+
+
+### Definitely Tricky
+
+* If you roll and add 3 dice the lowest possible is 3, highest is 18. Roll `n` dice the lowest is `n` and the highest is `6n`. 
+    * Write a program to roll *n* dice 10,000 times in a row
+        * Store the results in a list. 
+        * Plot the results using a turtle. 
+        * Compare what you see for $n \; = \; 1, 2, 3, 4, \; and \; 5$. 
 * You have a set of n objects, all different, placed in a row before you. You decide to count how many subsets of this set there are by placing either a black or a white pawn next to each object. A black pawn means the object is in the subset and a white pawn means that the object is not in the subset. Now two questions:
   * Does this suggest an easy way of calculating the total number of subsets?
   * What if anything does this have to do with previous challenges? 
