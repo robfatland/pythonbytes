@@ -170,7 +170,7 @@ Ok maybe they are Volkswagon bugs in a gigantic soccer stadium... doesn't matter
 What problem? Well it is a famous math problem that can be solved using some logic. 
 Whether you solve it or not you can certainly explore the problem using a Python program. 
 Because this project is a lot of fun we encourage you to 
-[read more about it here!](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
+[read more about it here!](https://github.com/robfatland/pythonbytes/tree/master/projects/bugs#pythonbytes-project-in-depth)
 
 
 ### :star: Project: Pi from Py
