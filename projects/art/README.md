@@ -10,24 +10,21 @@
 ### Overview
 
 
-A number of Python Bytes students expressed an interest in art and design via computer. Often artists use special
-creative Apps but here we are learning to program in Python; so you are the person creating (and using) the App. 
-
-
-What sort of art might you create? One approach is to look for inspiration in the paintings of the 20th and 21st
-century. You might for example use a search engine to find sources of **abstract art**. I found Piet Mondrian...
+Interested in art and design via computer?  What sort of art might you create? One approach is to look for inspiration in the 
+paintings of the 20th and 21st century. You might for example use a search engine to find sources of **abstract art**. 
+I found Piet Mondrian...
 
 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/mondrian.png" alt="drawing" width="350"/>
 
 
-and here is another but who was the artist? 
+and  
 
 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/abstract.png" alt="drawing" width="400"/>
 
 
-How about this optical illusion? 
+Optical illusions can be artistic... 
 
 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/opticalillusion.png" alt="o-illusion" width="400"/>
@@ -39,9 +36,9 @@ Could you write a Python program to produce something like this?
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/lines.png" alt="drawing" width="300"/>
 
 
-What about other Python Bytes projects? Take a look at the 
-[Stargirl project page](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
-that produces this image...
+The
+[Stargirl project](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
+produced this image...
 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/stargirl/trajectories.png" alt="drawing" width="400"/>
 
@@ -54,6 +51,7 @@ projects will also produce some interesting images for you to enjoy.
 
 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/julia.png" alt="drawing" width="300"/>
+
 
 ### Spoiler Alert!
 
@@ -111,7 +109,7 @@ Another question: If the turtle is called `artist` then why does the `rectangle(
 `artist.up()`? 
 
 
-Working from this starting point (you can do this on cswonders or your favorite Python environment) you should be able to put
+Working from this starting point you should be able to put
 together a pretty good approximation of Piet Mondrian's painting. And we're off and running!
 
 
