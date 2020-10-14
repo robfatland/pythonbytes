@@ -1,48 +1,39 @@
 # PythonBytes Project Ideas
 
 
-[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects#pythonbytes-project-ideas)
-
-### How To Begin
-
-* Read the descriptions to decide on a project. Remember that each one has its own page; use the link.
-* Decide if you are working alone or with a team of your fellow students
-* Find a coach and talk to them to **register** your project
-    * Who, what, how (environment), how long, how to get help 
-* Monitor your progress
-    * Stuck? Coaches!!
+[this page.](https://bit.ly/pythonbytes)
 
 
-We ask you to *register* because we want you to be successful!
-Now please scroll down to enjoy the list of projects that follow. :star: is easy, :dragon: is harder, 
-:mountain: is very challenging. 
+## Instructions
+
+* For small simple projects click on [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
+* Read further for more ideas: Projects that are more challenging. Use links to read more about a project.
+* Remember: If you get stuck: Get help on Slack.
+* :star: is easier, :dragon: is harder, :mountain: is very challenging. 
 
 
-- :star: **Worksheets and cswonders.com mini-projects all listed together: 
-[**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
-page**
+- :star: Starter projects are called [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth) 
 - :star:**You are an 
 [artist](https://github.com/robfatland/pythonbytes/tree/master/projects/art#pythonbytes-project-in-depth)
- using Python to create famous and original artwork**
-- :star:**A farmer uses drones to locate 
-[beehives](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
-in her orchard so she can cultivate them and have a better harvest**
-- :star: **You observe some 
+ using Python to create beautiful artwork**
+- :star:**This project: Check with Rob. You are a farmer using drones to locate 
+[beehives](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)**
+- :star: **You place some 
 [bugs](https://github.com/robfatland/pythonbytes/tree/master/projects/bugs#pythonbytes-project-in-depth)
-placed on a table. They walk about... but how far do they go?**
+on a table top... and they carry out a strange sort of race.**
 - :star:**There are many ways to calculate 
 [pi](https://github.com/robfatland/pythonbytes/tree/master/projects/pi#pythonbytes-project-in-depth)
 using a computer; so learn to build and compare them**
 - :star: **Be completely and totally
 [**pointless**](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth),
-and give us a good laugh**
+to give us a good laugh**
 - :star: **Create a text 
 [adventure](https://github.com/robfatland/pythonbytes/tree/master/projects/adventure#pythonbytes-project-in-depth)
 for your friends to puzzle out**
-- :star:**Create a program that plays a 
+- :dragon:**Create a program that plays a 
 [simple game](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
-like tic-tac-toe or Nim; and add graphics!**
-- :star: **Interesting projects at [Project Euler](https://projecteuler.net/) await you...
+of tic-tac-toe (this is not so simple)**
+- :star: **Find interesting challenges at [Project Euler](https://projecteuler.net/)
 [learn more](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)**
 - :star: [**idunno**](https://github.com/robfatland/pythonbytes/tree/master/projects/idunno#pythonbytes-project-in-depth) 
 is the project for you if you don't know what project to do!
