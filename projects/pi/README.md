@@ -23,7 +23,7 @@ The goal for this project is to see how many ways you can calculate pi; and then
 does the above formula become more accurate as you add more and more fractions according to the same pattern? 
 
 
-### Monte Carlo method
+### Darts method
 
 
 Throw darts at random at a square dart board with a circle drawn upon it. Track both the total number of darts
