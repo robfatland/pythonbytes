@@ -17,7 +17,7 @@ Remember: If you get stuck: Get help on Slack. The :star: means easier, :dragon:
  using Python to create beautiful artwork**
 - :star:**This project: Check with Rob. You are a farmer using drones to locate 
 [beehives](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)**
-- :star: **You place some 
+- :dragon: **You place some 
 [bugs](https://github.com/robfatland/pythonbytes/tree/master/projects/bugs#pythonbytes-project-in-depth)
 on a table top... and they carry out a strange sort of race.**
 - :star:**There are many ways to calculate 
