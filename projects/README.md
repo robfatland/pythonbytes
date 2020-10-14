@@ -6,10 +6,9 @@
 
 ## Instructions
 
-* For small simple projects click on [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
-* Read further for more ideas: Projects that are more challenging. Use links to read more about a project.
-* Remember: If you get stuck: Get help on Slack.
-* :star: is easier, :dragon: is harder, :mountain: is very challenging. 
+For small simple projects click on [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth).
+Read further down this list for more projects that are more challenging. Use links to read more about each project.
+Remember: If you get stuck: Get help on Slack. The :star: means easier, :dragon: is harder, :mountain: is very challenging. 
 
 
 - :star: Starter projects are called [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth) 
@@ -66,24 +65,17 @@ calls and you hope to understand and even talk to them**
 landscapes: Build anything you can imagine** (Can't do on the school laptop; you must have your own computer to work on; and you must own or purchase a Minecraft license ($25))
 - :mountain: **[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
 : You pilot a Tesla Roadster and hope to escape the Jupiter system**
-- :mountain: **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
-Stack: An advanced project**
+
 
 
 ### Environments
 
-* :sparkles: [cswonders](http://cswonders.com) includes CodePad where you can save a project; and turtle graphics
+* :sparkles: Atom...
 * :coffee: [jdoodle](http://jdoodle.com) easy to get to on your school laptop browser; no sign-in required
 * :milky_way: [REPL.it](http://REPL.it) as introduced by Wei Lu. Free to use but you have to set up an account.
 * :snake: [Anaconda for Python 3.7](https://www.anaconda.com/download/) installed on your **own** computer (not on the school laptop). Great for pygame and Minecraft projects.
-* :octocat: Jupyter Notebooks; Requires a GitHub account with your sponsor's permission. Good for whales and data science.
 * :question: [python.org](http://python.org) is a Python-only website with a terminal... un-tested
 
-
-### Longer Project Descriptions
-
-
-***Click on the links above to learn more in-depth; or scroll down to read a bit more...***
 
 
 ### :star: Project: Coils
@@ -395,18 +387,16 @@ and identify whale calls.
 
 
 
-### :dragon: Project: Minecraft landscapes
+### :dragon: Minecraft landscapes
 
 
-**Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft** 
+**It takes some extra set-up but you can learn to create fantastical things in Minecraft using Python**
 
 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/minecraft/minecraft.png" alt="drawing" width="400"/>
 
 
-You can see this image is from the Minecraft world. There is a trail of dynamite because I wrote a Python program to track
-a player's movements and mark her locations with TNT blocks. The potential is very great for you to create in the Minecraft
-world. What is required is that you have the game Minecraft installed on a PC or a Mac -- which I think costs about $25 --
+What is required is that you have the game Minecraft installed on a PC or a Mac -- which I think costs about $25 --
 and then you have to go through a few additional steps. Here is a nine-line program that creates chaos in Minecraft.
 
 ```
@@ -451,11 +441,3 @@ This project would be quite challenging if you are new to gravity. If you have a
 gravity you will have some helpful intuition; and we can always give you some further help; come see us!
 
 
-### :mountain: Project: Ditch Day Stack
-
-
-**Ditch Day Stack: An advanced project for those who complete some other project and have time to do more.**
-
-
-This is an advanced project for students who complete a project and have time to do more. The key idea to this project
-is you have no idea what it is about to start with except for the three words 'ditch day stack'. 
