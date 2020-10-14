@@ -28,8 +28,7 @@ Eventually all of the bugs meet at the center of the table. When they do: How fa
 
 
 Now you are probably wondering what the bugs' real names are. I was too until I looked it up. They are named Alpher, 
-Bethe, Gamow and Dyson. You would think that bug C would be called Camow but nope! It is Gamow. You can look up Alpher 
-Bethe and Gamow on Wikipedia but it will not mention Dyson. He came along later to explain everything. 
+Bethe, Gamow and Dyson. You would think that bug C would be called Camow but nope! It is Gamow.
 
 
 ### Now what?
