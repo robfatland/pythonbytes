@@ -68,7 +68,7 @@ landscapes: Build anything you can imagine** (Can't do on the school laptop; you
 
 
 
-### Environments
+## Environments
 
 * :sparkles: Atom...
 * :coffee: [jdoodle](http://jdoodle.com) easy to get to on your school laptop browser; no sign-in required
@@ -78,15 +78,7 @@ landscapes: Build anything you can imagine** (Can't do on the school laptop; you
 
 
 
-### :star: Project: Coils
-
-
-**The coils of the Python gradually squeeze programming challenges until they are solved.**
-
-We began the club with some worksheets that included some challenges. This project simply reminds you what they
-were. You are invited to 
-[revisit them](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth),
-solve them and take them further.
+## Some more project detail, with links to even more
 
 
 ### :star: Project: Art Concepts
