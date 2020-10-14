@@ -1,9 +1,7 @@
 # PythonBytes Project In-Depth
 ## Bees and Drones
-### Please use Python 3 at http://repl.it for this project
-#### Remember you have to create an account; and tell the website you are at Tyee Middle School
-##### For a quick sketch to get started: See the file `example.py`
-##### For a more complete look at the solution: See `example_complete.py`
+### Read the description; and check in with Rob before starting to work on this project
+### Use Python 3 at http://repl.it
 
 
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
@@ -23,13 +21,15 @@ In this project we imagine that you are a farmer with a large orchard of Baobab 
 Here to remind you is a picture of the Baobab tree...
 
 
+
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png" alt="baobab" width="350"/>
+
 
 The orchard is 2000 meters by 2000 meters; plus there is height above the ground in meters.
 We can say that the orchard is three-dimensional with coordinates (x, y, z) where x and y
 are somewhere between 0 and 2000 and z is somewhere between 0 and 30. 
 
-Now as a farmer you also happen to own an unlimited supply of drones, the mechanical kind. These drones
+Now as a farmer you also happen to own a supply of drones, the mechanical kind. These drones
 you can send to various locations in your orchard where they can count how many bees are nearby. (They listen 
 to the buzzing.)
 
