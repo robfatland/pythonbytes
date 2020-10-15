@@ -11,14 +11,16 @@ Looking for project work to reinforce your basics?  This is the place for you.
 
 * ...that prints *`Lonna’s dog said “whuff!!”`*
 * ...to print out the first 20 fibonacci numbers: `0, 1, 1, 2, 3, 5, 8, ...` and so on.
-* ...that uses the code below 
+* ...to determine if a positive integer is a prime number
+* ...that uses random numbers
 
 ```
 from random import randint
 print(randint(1,6)+randint(1,6))
 ```
 
-* ...to determine if a positive integer is a prime number
+### Next level up: Write a program with turtle graphics...
+
 * ...that draws a simple optical illusion
 * ...that watches some turtles wander around on the screen
 
