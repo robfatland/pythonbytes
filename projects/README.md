@@ -8,7 +8,9 @@ Read further down this list for more projects that are more challenging. Use lin
 Remember: If you get stuck: Get help on Slack. The :star: means easier, :dragon: is harder, :mountain: is very challenging.
 
 
-***At the bottom of this page are some coding suggestions.***
+***Bottom of this page: Suggestions on how to learn to code.***
+
+Below this list is a set of links to other people's project lists. Or type 'simple coding challenges' in your browser search bar. 
 
 
 - :star: Starter projects are called [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth) 
@@ -66,6 +68,10 @@ landscapes: Build anything you can imagine** (Can't do on the school laptop; you
 - :mountain: **[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
 : You pilot a Tesla Roadster and hope to escape the Jupiter system**
 
+## Other websites with project ideas
+
+* [This one](https://adriann.github.io/programming_problems.html)
+* oh i should find some more...
 
 
 ## Environments
