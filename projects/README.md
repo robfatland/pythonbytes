@@ -1,14 +1,14 @@
 # PythonBytes Project Ideas
 
 
-[this page.](https://bit.ly/pythonbytes)
-
-
 ## Instructions
 
 For small simple projects click on [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth).
 Read further down this list for more projects that are more challenging. Use links to read more about each project.
-Remember: If you get stuck: Get help on Slack. The :star: means easier, :dragon: is harder, :mountain: is very challenging. 
+Remember: If you get stuck: Get help on Slack. The :star: means easier, :dragon: is harder, :mountain: is very challenging.
+
+
+***At the bottom of this page are some coding suggestions.***
 
 
 - :star: Starter projects are called [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth) 
@@ -433,3 +433,30 @@ This project would be quite challenging if you are new to gravity. If you have a
 gravity you will have some helpful intuition; and we can always give you some further help; come see us!
 
 
+
+## Coding Suggestions
+
+* Before you start on the computer: Write out your ideas with pencil and paper.
+    * Why? Because the computer screen can distract you and make it harder to come up with a good plan for your program.
+* Write small pieces of code and test them before moving on
+    * Why? If you write big programs it will be harder to figure out what is going wrong when something goes wrong.
+* Use `print()`, `time`, `# comments` and `assert` statements to make your program transparent and reliable
+
+
+## Coding Framework
+
+* You code by translating *real world* thoughts, problems and ideas into the framework of a computer program. 
+
+* Learn to code the way that you learn a new language: Practice practice practice; and expect to make and fix mistakes.
+
+* Understand **Flow of Control** as the way your code executes: You are the computer: What are you doing now? What will you do next?
+
+* Understand **variables**: They have an *identifier* (or label), they have a `type` (like `float`) and they have a value (like `4.7`)
+
+* Understand how an expression like `t < 4` evaluates logically as `True` or `False` and how this affects Flow of Control
+
+* Learn syntax, particularly when to use colons `:` and how indented blocks of code work
+
+* Understand `keywords` like `while` and `True`
+
+* 
