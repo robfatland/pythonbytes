@@ -2,52 +2,53 @@
 
 ## Four Bugs
 
-
-### Select the Python + Turtle environment at [repl.it](http://repl.it)
+You do not have to use graphics for this project; but you certainly can! I used turtles to represent the bugs. 
+Read on to learn more; and remember the first rule of programming is get out a piece of paper; don't start
+writing code until you have a good think.
 
 
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/bugs#pythonbytes-project-in-depth)
 
 
-### Overview
+### The problem
 
-Four bugs -- call them A, B, C, and D -- are at the corners of a square table of side *s*. Each bug
-faces the bug at the next corner to their left: A faces B, B faces C, C faces D and D faces A. At a 
+
+This is a problem in mathematical reasoning that you can also solve using a computer program. Your choice!
+
+
+Imagine this: Four bugs -- call them A, B, C, and D -- are at the corners of a square table of side *s*. Each bug
+faces the bug at the next corner to their left: A faces B, B faces towards C, C faces D and D faces A. At a 
 signal all the bugs begin walking: Each towards the bug it is facing. They take identical-length tiny bug steps
 and as you might imagine they constantly adjust the direction of their walk. For example A starts walking towards
 B but as B is walking towards C: A will have to adjust her path to the right to keep walking directly towards B. 
 
 
-Eventually all of the bugs meet at the center of the table. When they do: How far has each walked? 
+Eventually all of the bugs meet at the center of the table. Do you agree? When they do: How far has each walked? 
 
-
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/bugs/bugpaths2.png" alt="drawing" width="400"/>
 
 
 #### An unhelpful and confusing paragraph...
 
 
-Now you are probably wondering what the bugs' real names are. I was too until I looked it up. They are named Alpher, 
-Bethe, Gamow and Dyson. You would think that bug C would be called Camow but nope! It is Gamow.
+You may wonder: What are the bugs' real names? I was wondering too until I looked it up. They are named Alpher, 
+Bethe, Gamow and Dyson. You would think that bug C would be called Camow but nope! It is named Gamow.
+Together they discovered the answer to one of the great mysteries of the universe: What makes stars burn.
 
 
-### Now what?
+Ok back to our problem.
 
-* We suggest you work on this project at [repl.it](http://repl.it) using their **Python + Turtle** environment
-* If you work on this at cswonders on Code Pad: Copy and paste your code into OneNote so you don't lose it
-* For useful tips see **Details** below, particularly on turtle graphics
-* Be sure to sign up for this project with the coaches
+* There are methods in the turtle graphics library that help you orient each turtle properly.
+* For more useful tips see **Details** below, particularly on turtle graphics
 * Be sure to ask for help if you happen to get stuck
-* **SPOILER ALERT** There are example programs in this folder that you can look at...
 
 
 ### Details
 
 
 The technical word for one thing chasing after another is 'pursuit'. Often the paths of pursuit are pretty 
-and/or interesting curves. Pursuit problems in Python can make good use of turtle graphics. Why? Because turtle 
-graphics has built in *methods* to keep the bugs moving in the right direction. 
-This section explains the key ones you can use.
+to look at. Pursuit curves are also often interesting curves. Pursuit problems in Python can make good use 
+of turtle graphics. Why? Because the turtle library has built in *methods* to keep the bugs moving in the 
+right direction, each towards the next bug around the table. This section explains the key ones you can use.
 
 
 Suppose we have a turtle called **a** and another called **b**:
